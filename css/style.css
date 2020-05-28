@@ -345,6 +345,7 @@ height: 123px;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-blackk);
+  text-transform: uppercase;
 }
 
 .punch-background {
@@ -358,6 +359,7 @@ height: 123px;
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-greilight);
+  text-transform: uppercase;
 }
 
 .filter-background{
@@ -372,6 +374,7 @@ height: 123px;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-blackk);
+  text-transform: uppercase;
 }
 
 .price {
@@ -380,6 +383,7 @@ height: 123px;
   ont-size: 17px;
   line-height: 30px;
   color: var(--basic-blackk);
+  text-transform: uppercase;
 }
 
 .price input {
@@ -397,6 +401,7 @@ height: 123px;
   font-size: 15px;
   line-height: 19px;
   color: var(--basic-blackk);
+  text-transform: uppercase;
 }
 .show-white-button {
   font-family: PT Sans, Arial, sans-serif;
@@ -405,6 +410,7 @@ height: 123px;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-blackk);
+  text-transform: uppercase;
 }
 
 .sort-line {
