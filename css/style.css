@@ -110,7 +110,6 @@ img {
 }
 
 .header-top-line{
-  font-family: Cuprum, Arial, sans-serif;
   background-color: var(--basic-black);
 }
 
@@ -156,7 +155,7 @@ img {
 }
 
 .header-bottom-line {
-  font-family: Cuprum, Arial, sans-serif;
+  
   background-color: var(--basic-greilight);
 }
 
@@ -198,15 +197,13 @@ height: 123px;
 }
 
 .section-title h2 {
-  font-family: Cuprum, Arial, sans-serif;
+  /*font-family: Cuprum, Arial, sans-serif;*/
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-greilight); 
 }
 
-}
 .popular-products-list a {
-  font-family: PT Sans, Arial, sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -232,7 +229,6 @@ height: 123px;
 }
 
 .service-block p {
-  font-family: PT Sans, Arial, sans-serif;
   font-size: 13px;
   color: var(--basic-blackk);
 }
@@ -340,37 +336,34 @@ height: 123px;
   color: var(--basic-greilight);
 }
 
-.catalog-tool-punches a {
-  font-family: PT Sans, Arial, sans-serif;
+.bread-crumbs a {
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-blackk);
   text-transform: uppercase;
 }
 
-.punch-background {
+.bread-crumbs-line {
   font-family: Cuprum, Arial, sans-serif;
   background-color: var(--special-bluelight);
   width: 940px;
   height: 89px;
 }
 
-.punch-background h2 {
+.bread-crumbs-line h2 {
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-greilight);
   text-transform: uppercase;
 }
 
-.filter-background{
-  font-family: PT Sans, Arial, sans-serif;
+.filter-background {
   width: 220px;
   height: 38px;
   background-color: var(--basic-back-groundd);
 }
 
 .filter-background h3 {
-  font-family: PT Sans;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-blackk);
@@ -378,16 +371,14 @@ height: 123px;
 }
 
 .price {
-  font-family: PT Sans;
   font-weight: bold;
-  ont-size: 17px;
+  font-size: 17px;
   line-height: 30px;
   color: var(--basic-blackk);
   text-transform: uppercase;
 }
 
 .price input {
-  font-family: PT Sans, Arial, sans-serif;
   width: 95px;
   height: 38px;
   background-color: var(--basic-back-groundd);
@@ -397,14 +388,12 @@ height: 123px;
 }
 
 .firm-partner {
-  font-family: PT Sans;
   font-size: 15px;
   line-height: 19px;
   color: var(--basic-blackk);
   text-transform: uppercase;
 }
 .show-white-button {
-  font-family: PT Sans, Arial, sans-serif;
   width: 220px;
   height: 38px;
   font-size: 13px;
@@ -414,7 +403,6 @@ height: 123px;
 }
 
 .sort-line {
-  font-family: PT Sans, Arial, sans-serif;
   width: 700px;
   height: 38px;
   background-color: var(--basic-back-groundd);
