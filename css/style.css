@@ -169,6 +169,8 @@ img {
 
 .button-red--switch {
   font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
   display: inline-block;
   width: 38px;
   height: 38px;
@@ -181,6 +183,8 @@ img {
 
 .button--switch {
   font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
   color: var(--basic-blackk);
   background-color: var(--basic-white);
   display: inline-block;
@@ -193,18 +197,19 @@ img {
   margin-right: 10px;
 }
 
-
+.switch {
+  width: 140px;
+  height: 38px;
+  text-transform: uppercase;
+  padding: 10px;
+  padding-right: 31px;
+  padding-left: 32px;
+}
 
 .container {
   max-width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-}
-
-.container1 {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0px;
 }
 
 .page {
@@ -255,8 +260,8 @@ img {
   line-height: 23px;
   color: var(--basic-red);
   width: 197px;
-  margin-bottom: 44.5px;
-  margin-top: 37.5px;
+  margin-bottom: 44px;
+  margin-top: 37px;
 }
 
 .header-phone--block {
@@ -286,6 +291,8 @@ img {
   color: var(--basic-greilight);
   font-size: 14px;
   font-style: normal;
+  width: 250px;
+  margin-left: 103px;
 }
 
 .header-enter {
@@ -480,11 +487,14 @@ height: 123px;
    width: 700px;
    grid-column: 2 /3;
    grid-row: 2 /3;
+   padding-bottom: 48px;
+   padding-left: 20px;
 }
 
 .pagination {
   grid-column: 2 /3;
-   grid-row: 3 / 4;
+  grid-row: 3 / 4;
+  display: flex;
 }
 
 .products-item {
@@ -691,8 +701,8 @@ grid-template-columns: 240px 1fr;
 
 .contacts .button {
   margin-top: 8px;
-  padding-left: 39.71px;
-  padding-right: 40.29px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .discription-contacts {
@@ -725,8 +735,8 @@ grid-template-columns: 240px 1fr;
   display: block;
   margin-top: 25px;
   width: 300px;
-  padding-left: 61.87px;
-  padding-right: 61.13px;
+  padding-left: 62px;
+  padding-right: 61px;
 }
 
 .modall-app {
@@ -1053,7 +1063,13 @@ grid-template-columns: 240px 1fr;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-blackk);
+  background-color: var(--basic-white);
   text-transform: uppercase;
+  padding: 10px;
+  padding-left: 78px;
+  padding-right:80px;
+  margin-top: 37px;
+  margin-right: 20px;
 }
 
 .sort-line {
@@ -1065,7 +1081,10 @@ grid-template-columns: 240px 1fr;
   background-color: var(--basic-back-groundd);
   grid-row: 1 / 2;
   grid-column: 2 / 3;
-
+  max-width: 940px;
+  margin: 0 ;
+  padding: 0px;
+  margin-left: 20px;
 }
 
 .sort-line h3 {
