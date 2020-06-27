@@ -980,45 +980,37 @@ grid-template-columns: 240px 1fr;
   background-position: 0 0;
 }
 
-
-.service-delivery-list {
+.service-list-item {
+  font-family: Cuprum, Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
+  color: var(--basic-white);
+  background-color: var(--basic-greilight);
+  width: 240px;
+  height:61px;
+  border:0px;
+  outline: none;
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+}
+
+.service-list-item--active {
   color: var(--basic-greilight);
   background-color: var(--basic-white);
-  width: 240px;
-  height:61px;
+  box-shadow: 0px 1px 0px #FFFFFF;
 }
 
-.service-delivery-list:hover ,
-.service-delivery-list:focus {
-   background-color: var(--basic-black);
-   color: var(--basic-white);
-}
 
-.service-delivery-list:active {
-  color: var(--basic-white);
-  background-color: var(--basic-greilight);
-}
-
-.service-guarantee-credit{
-  font-size: 21px;
-  line-height: 30px;
-  color: var(--basic-white);
-  background-color: var(--basic-greilight);
-  width: 240px;
-  height:61px;
-  margin-top: 1px
-}
-
-.service-guarantee-credit:hover ,
-.service-guarantee-credit:focus {
+.service-list-item:hover ,
+.service-list-item:focus {
   background-color: var(--basic-black);
+  color: var(--basic-white);
+  box-shadow: none;
 }
 
-.service-guarantee-credit:active {
+.service-list-item:active {
   color: var(--basic-greilight);
   background-color: var(--basic-white);
+  box-shadow: none;
 }
 
 .company-description {
@@ -1221,8 +1213,8 @@ grid-template-columns: 240px 1fr;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 135px;
-  margin: 0 1px;
-  padding: 0;
+  margin: 34px 1px 29px;
+  padding: 0px;
   list-style: none;
 }
 
@@ -1232,18 +1224,24 @@ grid-template-columns: 240px 1fr;
   justify-content: center;
   width: 44px;
   height: 44px;
-  background-color: var(--basic-black);
-  color: inherit;
+  background-image: linear-gradient(0deg, #212A3A, #212A3A);
+  color: var(--basic-white);
+  border-radius: 50%;
 }
 
-.social-button svg:hover ,
-.social-button svg:focus {
+.social-button svg {
+  fill: var(--basic-white);
+}
+
+.social-button:hover ,
+.social-button:focus {
+  background-image: none;
   background-color: var(--basic-red);
 }
 
-.social-button svg:active{
+.social-button:active  {
+  background-image: none;
   background-color: var(--basic-red);
- 
 }
 
 .footer-bottom-feedback {
@@ -1453,6 +1451,8 @@ grid-template-columns: 240px 1fr;
   justify-content: flex-start;
   padding-top: 21px;
   padding-bottom: 20px;
+  list-style: none;
+  margin: 0 auto;
 }
 
 .bread-crumbs a {
@@ -1463,12 +1463,47 @@ grid-template-columns: 240px 1fr;
   padding-right: 20px;
 }
 
+.bread-crumbs--list {
+  position: relative;
+}
+
+.bread-crumbs--list::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 14px;
+  height: 12px;
+  background-image: url("../img/icons/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.bread-crumbs li {
+  position: relative;
+  padding-right: 20px;
+  padding-left: 20px
+}
+
+.bread-crumbs li:not(:first-child)::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left:-9px;
+  width: 8px;
+  height: 12px;
+  background-image: url("../img/icons/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .bread-crumbs-line {
   font-family: Cuprum, Arial, sans-serif;
   background-color: var(--special-bluelight);
   width: 940px;
   height: 89px;
   margin-bottom: 20px;
+  padding: 0px;
 }
 
 .bread-crumbs-line h2 {
@@ -1577,5 +1612,36 @@ grid-template-columns: 240px 1fr;
   line-height: 18px;
   color: var(--basic-blackk);
   text-transform: uppercase;
+}
+.sort-line--up {
+  position: relative;
+}
+
+.sort-line--up::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 1px;
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/icons/up.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.sort-line--down {
+  position: relative;
+}
+
+.sort-line--down::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -40px;
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/icons/down.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 /*подтянуть нейминг*/
