@@ -100,6 +100,8 @@
 				<a href="">
 				<img src="img/slider/2.jpg" width="620" height="266" alt="фото реклама">
 	    		</a>
+	    		<button class="in-the-previous" type="button" aria-label="предыдущий"></button>
+	    		<button class="in-the-next" type="button" aria-label="следующая"></button>
 	    		<a class="button" href="catalog.html">Открыть каталог</a>	
 			</div>
 			<div class="promo-slider-element">
@@ -121,24 +123,40 @@
     <ul class="products-list">
 		<li class="products-item">
 			<img src="img/product/perforator1.jpg" width="184" height="164" alt="Перфоратор">
+			<div class="products-item--link">
+				<a class="products-item--link1" href="">купить</a>
+				<a class="products-item--link2" href="">в закладки</a>
+			</div>
 			<h3>Перфоратор BOSCH BFG 9000</h3>
 			<del>32500 Р.</del>
 		    <a class="button2" href="">25500 Р.</a>
 		</li>
-		<li class="products-item">
+		<li class="products-item catalog-new">
 			<img src="img/product/perforator.jpg" width="127" height="112" alt="Перфоратор">
+			<div class="products-item--link">
+				<a class="products-item--link1" href="">купить</a>
+				<a class="products-item--link2" href="">в закладки</a>
+			</div>
 			<h3>Перфоратор BOSCH BFG 3000</h3>
 			<del>22500 Р.</del>
 		    <a class="button2" href="">15500 Р.</a>
 		</li>
 		<li class="products-item">
 			<img src="img/product/perforator2.jpg" width="144" height="128" alt="Перфоратор">
+			<div class="products-item--link">
+				<a class="products-item--link1" href="">купить</a>
+				<a class="products-item--link2" href="">в закладки</a>
+			</div>
 			<h3>Перфоратор BOSCH BFG 6000</h3>
 			<del>30500 </del>
 		    <a class="button2" href="">25500 Р.</a>
 		</li>
-		<li class="products-item">
+		<li class="products-item catalog-new">
 			<img src="img/product/perforator.jpg" width="127" height="112" alt="Перфоратор">
+			<div class="products-item--link">
+				<a class="products-item--link1" href="">купить</a>
+				<a class="products-item--link2" href="">в закладки</a>
+			</div>
 			<h3>Перфоратор BOSCH BFG 2000</h3>
 			<del></del>
 		    <a class="button2" href="">12500 Р.</a>
@@ -176,12 +194,12 @@
 			    <li><button class="service-list-item" type="submit">Кредит</button></li>
 		    </ul>
 		    <ul class="service-slider">
-		    	<li class="service-slider-element item-active">
+		    	<li class="service-slider-element  service-slider-element--delivery">
 					<h2>Доставка</h2>
 					<p>
-					    Мы с удовольствием доставим ваш товар прямо
-					    к вашему подъезду совершенно бесплатно!
-					    Ведь мы неплохо заработаем,
+					    Мы с удовольствием доставим ваш товар прямо<br>
+					    к вашему подъезду совершенно бесплатно!<br>
+					    Ведь мы неплохо заработаем,<br>
 					    поднимая его на ваш этаж!
 					</p>
 				</li>
@@ -193,13 +211,14 @@
 			
 			<!--Конец блока сервисов Доставки-->
 			
-		    	<li class="service-slider-element">
+		    	<li class="service-slider-element service-slider-element--garant">
 					<h2>Гарантия</h2>
 					<p>
-					    Если купленный у нас товар поломается или заискрит,
-					    а также в случае пожара, спровоцированного его
-					    возгоранием,  вы всегда можете быть уверены в нашей
-					    гарантии. Мы обменяем сгоревший товар на новый Дом уж восстановите как-нибудь сами.
+					    Если купленный у нас товар поломается или заискрит,<br>
+					    а также в случае пожара, спровоцированного его<br>
+					    возгоранием,  вы всегда можете быть уверены в нашей<br>
+					    гарантии. Мы обменяем сгоревший товар на новый<br>
+					    Дом уж восстановите как-нибудь сами.
 					</p>
 				</li>
 			
@@ -209,14 +228,14 @@
 			
 			<!--Конец блока сервисов Гарантии-->
 			
-		    	<li class="service-slider-element">
+		    	<li class="service-slider-element item-active service-slider-element--credit">
 					<h2>Кредит</h2>
 					<p>
-					    Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+					    Залезть в долговую яму стало проще!<br>
+					    Кредитные консультанты придут вам на помощь.
 					</p>
+					<div class="button">отправить звявку</div>
 				</li>
-			
-
 			
 				<!--a href=""><img src="img/service/credit.png" width="465" height="285" alt="Картинка кредитного договора"></a-->
 			</ul>
@@ -252,30 +271,6 @@
 		    <a href=""><img src="img/map.jpg" width="300" height="158" alt="карта с адресом"></a>
 		    <a class="button" href="">Заблудились? напишите нам!</a>
 		</div>
-		
-		<div class="modall-app">
-			<div>
-				<img src="img/bigmap.jpg" width="943" height="469" alt="Большая карта с адресом">
-				<button class="button" type="button">закрыть окно с картой</button>
-			</div>
-			<div>
-				<form action="https://echo.htmlacademy.ru/courses" method="post">
-		              <div class="half-width">
-		                <label class="data-for-the-application" for="name">Ваше имя</label>
-		                <input class="text-rgey" type="text" id="name" name="name" value="Имя Фамилия" required>
-		              </div>
-		               <div class="half-width">
-		                <label class="data-for-the-application" for="email">Ваш e-mail:</label>
-		                <input class="text-rgey" type="email" id="email" name="email" value="email@example.com" required>
-		              </div>
-		            <label class="data-for-the-application" for="review">Текст письма</label>
-		            <textarea class="text-rgey" name="review" id="review" cols="30" rows="3" required>В свободной форме</textarea>
-		            <button class="button" type="submit">Отправить</button>
-				</form>
-			</div>
-		</div>
-	</div>
-
 	<!--Конец правого блока-->
 </main>
 <!--main end-->
@@ -284,8 +279,8 @@
 
 	<!--Начало левого блока-->
 	<div class="footer-navigation container">
-	    <a href="/">
-	    	<img src="img/icons/logo-technomart.svg" width="220" height="68" alt="ТЕХНОМАРТ">
+	    <a class="footer-navigation-block" href="/">
+	    	<img src="img/icons/logo-technomart.svg" width="138" height="23" alt="ТЕХНОМАРТ">
 	    </a>
 	    <div class="footer-navigation-address-number">
 	    	<address class="location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
@@ -344,8 +339,38 @@
 	 		<p class="footer-bottom-feedback--web">Разработано— <a href="">htmlacademy.ru</a></p>
  		</div>
  	</div>
-	
 </footer>
+
+<div class="modall-app modall-app--active">
+	<form class="modall-app--form" action="https://echo.htmlacademy.ru/courses" method="post">
+		<div class="app">
+			<button class="modal-close" type="button" aria-label="Закрыть"></button>
+          	<div class="half-width">
+                <label class="data-for-the-application" for="name">Ваше имя</label>
+                <input class="text-rgey" type="text" id="name" name="name" value="Имя Фамилия" required>
+          	</div>
+           	<div class="half-width">
+                <label class="data-for-the-application" for="email">Ваш e-mail:</label>
+                <input class="text-rgey" type="email" id="email" name="email" value="email@example.com" required>
+         	</div>
+        </div>
+        <label class="data-for-the-application" for="review">Текст письма</label>
+        <textarea class="text-rgey text-rgey--style" name="review" id="review" cols="30" rows="3" required>В свободной форме</textarea>
+	</form>
+	<div class="modall-bottom--style">
+    	<button class="button" type="submit">Отправить</button>
+	</div>
+</div>
+
+	<div class="modall-map modall-map--active">
+			<div>
+				<img src="img/bigmap.jpg" width="943" height="469" alt="Большая карта с адресом">
+				<button class="modal-close" type="button" aria-label="Закрыть"></button>
+			</div>
+		</div>
+	</div>
   </body>
 </html>
+
+
  
