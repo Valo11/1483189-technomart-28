@@ -1,0 +1,11 @@
+<!-- Pixel Glass catalog -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        background-image: url( "pp/img/catalog.jpg" );
+      }
+    </style>
+	<link rel="stylesheet" href="pp/pp-style.css">
+    <script src="pp/pp-script.js"></script>
+<!-- // Pixel Glass -->
