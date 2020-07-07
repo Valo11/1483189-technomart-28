@@ -89,7 +89,7 @@
 
 /*Global*/
 
-body{
+body {
   min-width: 960px;
   margin: 0;
   padding: 0;
@@ -888,7 +888,7 @@ position: relative;
 }
 
 .section-title-popular .button {
-  margin-top: o;
+  margin-top: 0;
   margin-right: 13px;
   padding-left: 24px;
   padding-right: 24px;
@@ -2091,7 +2091,7 @@ grid-template-columns: 240px 1fr;
 }
 
 .bread-crumbs2 {
- margin-left: -1;
+ margin-left: -1px;
 }
 
 .bread-crumbs .bread-crumbs3 {
