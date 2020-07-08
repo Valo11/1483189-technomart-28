@@ -68,9 +68,10 @@
   --basic-back-groundd: #F7F3EC;
   --basic-back-ground-modal: #F4F4F4;
   --basic-white: #FFFFFF;
-  --basic-white-ghost:rgba(255, 255, 255, 0.3);
-  --basic-greydark:rgba(169, 169, 169, 0.3);
-  --basic-greylight-ghost:rgba(197, 197, 197, 0.3);
+  --basic-white-ghost: rgba(255, 255, 255, 0.3);
+  --basic-greydark: rgba(169, 169, 169, 0.3);
+  --basic-greylight-ghost: rgba(197, 197, 197, 0.3);
+  --basic-greylight-decor: rgba(229, 229, 229, 100%);
   --basic-greylight-cullian: #B5B5B5;
   --special-yellow: #FFBF47;
   --special-blue: #3BBCE3;
@@ -1383,7 +1384,6 @@ grid-template-columns: 240px 1fr;
   display: none;
   max-width: 620px;
   margin: 0 auto;
-  margin-left: 337px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -1440,7 +1440,6 @@ grid-template-columns: 240px 1fr;
   display: none;
   max-width: 943px;
   margin: 0 auto;
-  margin-left: 174px;
 }
 
 .modall-map--active {
@@ -1468,7 +1467,6 @@ grid-template-columns: 240px 1fr;
   /*display: none;*/
   max-width: 620px;
   margin: 0 auto;
-  margin-left: 344px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -2296,8 +2294,9 @@ grid-template-columns: 240px 1fr;
   left: 0px;
   width: 220px;
   height: 1px;
-  background-image: url("../img/icons/layer-decor.svg");
-  background-repeat: no-repeat;
+  background-color: var(--basic-greylight-decor);
+  /*background-image: url("../img/icons/layer-decor.svg");
+  background-repeat: no-repeat;*/
   background-position: 0 0;
 } 
 
@@ -2384,7 +2383,8 @@ opacity: 0.4;
   left: 0px;
   width: 220px;
   height: 1px;
-  background-image: url("../img/icons/layer-decor.svg");
+  background-color: var(--basic-greylight-decor);
+  /*background-image: url("../img/icons/layer-decor.svg");*/
   background-repeat: no-repeat;
   background-position: 0 0;
 } 
