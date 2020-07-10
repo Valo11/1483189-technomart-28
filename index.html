@@ -6,18 +6,7 @@
   	<meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта Техномарт">
     <title>Technomart</title>
     <link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<!-- Pixel Glass index -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        background-image: url( "pp/img/index.jpg" );
-      }
-    </style>
-    <script src="pp/pp-script.js"></script>
-	<link rel="stylesheet" href="pp/pp-style.css">
-<!-- // Pixel Glass -->
+	<link href="css/mini-style.css" rel="stylesheet">
   </head>
   <body class="page-body" >
    <!--header start-->
@@ -70,7 +59,6 @@
 	  			<li><a href="">Контакты</a></li>
 	  		</ul>      	
 	    </nav>
-    
   	<!--Навигация Конец-->
    </header>
    <!--header end-->
@@ -193,7 +181,7 @@
 		<li><img src="img/logo/metabo.jpg" width="220" height="145" alt="Metabo"></li>
 	</ul>
 	<!--Популярные производители конец-->
-	<!--Правый блок сервисов начало-->
+	<!-- блок сервисов начало-->
 	<div class="service-block">
 		<div class="container">
 			<h2>Сервисы</h2>
@@ -216,14 +204,8 @@
 					    поднимая его на ваш этаж!
 					</p>
 				</li>
-			
-			<!--Правый блок сервисов конец-->
-			<!--левый блок сервисов начало-->
-			
-				<!--a href=""><img src="img/service/thecar.png" width="468" height="261" alt="Фургончик доставки"></a-->
-			
 			<!--Конец блока сервисов Доставки-->
-			
+			<!--Начало блока сервисов Гарантии-->
 		    	<li class="service-slider-element service-slider-element--garant">
 					<h2>Гарантия</h2>
 					<p>
@@ -234,13 +216,8 @@
 					    Дом уж восстановите как-нибудь сами.
 					</p>
 				</li>
-			
-
-			
-				<!--a href=""><img src="img/service/medal.png" width="389" height="283" alt="Знак гарантии"></a-->
-			
 			<!--Конец блока сервисов Гарантии-->
-			
+			<!--Начало блока сервисов Кредит-->
 		    	<li class="service-slider-element  service-slider-element--credit">
 					<h2>Кредит</h2>
 					<p>
@@ -249,14 +226,10 @@
 					</p>
 					<div class="button">отправить звявку</div>
 				</li>
-			
-				<!--a href=""><img src="img/service/credit.png" width="465" height="285" alt="Картинка кредитного договора"></a-->
 			</ul>
-			
 		</div>
 	</div>
-	<!--Конец блока сервисов кредита-->
-
+	<!--Конец блока сервисов -->
 	<!--Начало левого блока-->
 	<div class="container company-description">
 		<div class="contacts">   
@@ -281,7 +254,7 @@
 	    <div class="discription-contacts">     
 		    <h2>контакты</h2>
 		    <p>Вы можете забрать товар сами, заехав в наш офис</p>
-		    <a href=""><img src="img/map.jpg" width="300" height="158" alt="карта с адресом"></a>
+		    <a id="bigg-mapp" href=""><img src="img/map.jpg" width="300" height="158" alt="карта с адресом"></a>
 		    <a class="button" href="">Заблудились? напишите нам!</a>
 		</div>
 	</div>
@@ -350,38 +323,42 @@
 				</ul>
 			</div>
 	 		<p class="footer-bottom-feedback--mail">Обратная связь: <a href="">mail@htmlacademy.ru</a></p>
-	 		<p class="footer-bottom-feedback--web">Разработано— <a href="">htmlacademy.ru</a></p>
+	 		<p class="footer-bottom-feedback--web">Разработано— <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
  		</div>
  	</div>
 </footer>
 
-<div class="modall-app modall-app--active">
-	<form class="modall-app--form" action="https://echo.htmlacademy.ru/courses" method="post">
-		<div class="app">
-			<button class="modal-close" type="button" aria-label="Закрыть"></button>
-          	<div class="half-width">
-                <label class="data-for-the-application" for="name">Ваше имя</label>
-                <input class="text-rgey" type="text" id="name" name="name" placeholder="Имя Фамилия" required>
-          	</div>
-           	<div class="half-width">
-                <label class="data-for-the-application" for="email">Ваш e-mail:</label>
-                <input class="text-rgey" type="email" id="email" name="email" placeholder="email@example.com" required>
-         	</div>
-        </div>
-        <label class="data-for-the-application" for="review">Текст письма</label>
-        <textarea class="text-rgey text-rgey--style" name="review" id="review" cols="30" rows="3" placeholder="В свободной форме" required></textarea>
+<div class="modall-app">
+	<form action="https://echo.htmlacademy.ru/courses" method="post">
+		<div class="modall-app--form">
+			<div class="app">
+				<button class="modal-close" type="button" aria-label="Закрыть"></button>
+	          	<div class="half-width">
+	                <label class="data-for-the-application" for="name">Ваше имя</label>
+	                <input class="text-rgey text-rgey-name" type="text" id="name" name="name" placeholder="Имя Фамилия" required>
+	          	</div>
+	           	<div class="half-width">
+	                <label class="data-for-the-application" for="email">Ваш e-mail:</label>
+	                <input class="text-rgey text-rgey-mail" type="email" id="email" name="email" placeholder="email@example.com" required>
+	         	</div>
+	        </div>
+	        <label class="data-for-the-application" for="review">Текст письма</label>
+	        <textarea class="text-rgey text-rgey--style" name="review" id="review" cols="30" rows="3" placeholder="В свободной форме" required></textarea>
+		</div>
+		<div class="modall-bottom--style">
+	    	<button class="button" type="submit">Отправить</button>
+		</div>
 	</form>
-	<div class="modall-bottom--style">
-    	<button class="button" type="submit">Отправить</button>
-	</div>
 </div>
 
-<div class="modall-map modall-map--active">
-	<div>
-		<img src="img/bigmap.jpg" width="943" height="469" alt="Большая карта с адресом">
-		<button class="modal-close" type="button" aria-label="Закрыть"></button>
-	</div>
+<div class="modall-map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1954.5681278578734!2d30.324127483511454!3d59.937646047776404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1594307550474!5m2!1sru!2sru" aria-hidden="false" tabindex="0"></iframe>
+	<img src="img/bigmap.jpg" width="943" height="469" alt="Большая карта с адресом">
+	<button class="modal-close" id="little-big" type="button" aria-label="Закрыть"></button>
 </div>
+
+<script src="js/mini-index.js"></script>
+
   </body>
 </html>
 

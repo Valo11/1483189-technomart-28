@@ -6,18 +6,7 @@
   	<meta name="description" content="Интернет-магазин строительных материалов  и инструментов для ремонта Техномарт">
 	<title>Каталог — Техномарт</title>
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<!-- Pixel Glass catalog -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        background-image: url( "pp/img/catalog.jpg" );
-      }
-    </style>
-	<link rel="stylesheet" href="pp/pp-style.css">
-    <script src="pp/pp-script.js"></script>
-	<!-- // Pixel Glass -->
+	<link href="css/mini-style.css" rel="stylesheet">
 </head>
 <body class="page-inner">
 	<!--header start-->
@@ -106,8 +95,11 @@
    			<div class="filter-background">
    			<h3>Фильтр:</h3>
    			</div>
-		    <fieldset class="filter-item">
-		        <legend>цена:</legend>
+	   			<!--Фильтры конец-->
+	   			<!--Начало блока форм-->
+   			<form action="https://echo.htmlacademy.ru" method="get">
+   				<fieldset class="filter-item">
+		        	<legend>цена:</legend>
 			        <div class="range-filter">
 				        <div class="range-controls">
 				            <div class="scale">
@@ -125,9 +117,7 @@
 				            </label>
 				        </div>
 			        </div>
-		    </fieldset>
-	   			<!--Фильтры конец-->
-   			<form action="https://echo.htmlacademy.ru" method="get">
+		    	</fieldset>
 		   		<fieldset class="sidebar">
 			   		<legend><h3 class="price">Производители:</h3></legend>	
 			          	<ul>
@@ -170,11 +160,10 @@
 			            	</li>
 			            </ul>
 			    </fieldset>
-			    	<!--input for="submit" value="показать"-->
-					<a class="button--switch show-white-button" href="">показать</a>
+					<button class="button--switch show-white-button" type="submit">показать</button>
 			</form>
 		</div>
-	   		<!--Конец левого блока-->
+	   		<!--Конец блока форм-->
 	   		<!--Начало правого блока-->
 	   		<div class="sort-line">
 		        <h3>Сортировка:</h3>  
@@ -286,8 +275,8 @@
 				</ul>
 			<div class="pagination">
 				<a class="button button-red--switch" href="">1</a>
-				<a class="button--switch" href="">2</a>
-				<a class="button--switch" href="">3</a>
+				<a class="button--switch switch1" href="">2</a>
+				<a class="button--switch switch2" href="">3</a>
 				<a class="button--switch switch" href="">Следующая</a>
 			</div>
 		</div>>
@@ -297,7 +286,7 @@
    			<div class="container">
 		   		<h2>Пара слов о перфораторах</h2>
 		   		<p>
-		   			Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+		   			Перфоратор – универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
 					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br> 
 					В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
 				</p>
@@ -365,11 +354,11 @@
 				</ul>
 			</div>
 	 		<p class="footer-bottom-feedback--mail">Обратная связь: <a href="">mail@htmlacademy.ru</a></p>
-	 		<p class="footer-bottom-feedback--web">Разработано— <a href="">htmlacademy.ru</a></p>
+	 		<p class="footer-bottom-feedback--web">Разработано— <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
  		</div>
  	</div>
 </footer>
-	<div class="catalog-modal catalog-modal-active">
+	<div class="catalog-modal">
 		<button class="modal-close" type="button" aria-label="Закрыть"></button>
 		<p>Товар добавлен в корзину!</p>
 		<div class="catalog-modal--style">
@@ -377,5 +366,6 @@
 			<button class="show-white-button" type="button">Продолжить покупки</button>
 		</div>
 	</div>
+	<script src="js/mini-catalog.js"></script>
 </body>
 </html>
