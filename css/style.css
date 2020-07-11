@@ -369,6 +369,7 @@ img {
   font-size: 13px;
   line-height: 18px;
   display: inline-block;
+  vertical-align: middle;
   width: 38px;
   border: 1px solid var(--basic-border3);
   box-sizing: border-box;
@@ -396,6 +397,7 @@ img {
   color: var(--basic-blackk);
   background-color: var(--basic-white);
   display: inline-block;
+  vertical-align: middle;
   width: 38px;
   border: 1px solid var(--basic-border3);
   box-sizing: border-box;
