@@ -1,6 +1,6 @@
 var itemLink = document.querySelector(".products-item--link1");
 var catalogModal = document.querySelector(".catalog-modal");
-var modalClose = catalogmodal.querySelector(".modal-close");
+var modalClose = catalogModal.querySelector(".modal-close");
 
 itemLink.addEventListener("click", function (evt) {
   	evt.preventDefault();

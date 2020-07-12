@@ -1,9 +1,9 @@
-var openModalform = document.querySelector(".discription-contacts .button");
+var openModalForm = document.querySelector(".discription-contacts .button");
 var modallApp = document.querySelector(".modall-app");
-var modalClose = modallapp.querySelector(".modal-close");
-var modalForm = modallapp.querySelector(".modall-app--form");
-var textName = modallapp.querySelector(".text-rgey-name");
-var textMail = modallapp.querySelector(".text-rgey-mail");
+var modalClose = modallApp.querySelector(".modal-close");
+var modalForm = modallApp.querySelector(".modall-app--form");
+var textName = modallApp.querySelector(".text-rgey-name");
+var textMail = modallApp.querySelector(".text-rgey-mail");
 
 var isStorageSupport = true;
 var storage = "";
@@ -14,7 +14,7 @@ try {
   	isStorageSupport = false;
 }
 
-openModalform.addEventListener("click", function (evt) {
+openModalForm.addEventListener("click", function (evt) {
   	evt.preventDefault();
   	modallApp.classList.add("modall-app--active");
 
