@@ -1,9 +1,9 @@
-var openmodalform = document.querySelector(".discription-contacts .button");
-var modallapp = document.querySelector(".modall-app");
+var openModalform = document.querySelector(".discription-contacts .button");
+var modallApp = document.querySelector(".modall-app");
 var modalClose = modallapp.querySelector(".modal-close");
 var modalForm = modallapp.querySelector(".modall-app--form");
-var textname = modallapp.querySelector(".text-rgey-name");
-var textmail = modallapp.querySelector(".text-rgey-mail");
+var textName = modallapp.querySelector(".text-rgey-name");
+var textMail = modallapp.querySelector(".text-rgey-mail");
 
 var isStorageSupport = true;
 var storage = "";
@@ -14,44 +14,44 @@ try {
   	isStorageSupport = false;
 }
 
-openmodalform.addEventListener("click", function (evt) {
+openModalform.addEventListener("click", function (evt) {
   	evt.preventDefault();
-  	modallapp.classList.add("modall-app--active");
+  	modallApp.classList.add("modall-app--active");
 
   	if (storage) {
-    	textname.value = storage;
-    	textmail.focus();
+    	textName.value = storage;
+    	textMail.focus();
   	} else {
-  		textname.focus();
+  		textName.focus();
   	}
 });
 
 modalClose.addEventListener("click", function (evt) {
   	evt.preventDefault();
-  	modallapp.classList.remove("modall-app--active");
-  	modallapp.classList.remove("modal-error");
+  	modallApp.classList.remove("modall-app--active");
+  	modallApp.classList.remove("modal-error");
 });
 
 modalForm.addEventListener("submit", function (evt) {
 	if (!textname.value || !textmail.value) {
 		evt.preventDefault();
-		modallapp.classList.remove("modal-error");
-		modallapp.offsetWidth = modallapp.offsetWidth;
-		modallapp.classList.add("modal-error");
+		modallApp.classList.remove("modal-error");
+		modallApp.offsetWidth = modallApp.offsetWidth;
+		modallApp.classList.add("modal-error");
 	} else {
 		 if (isStorageSupport) {
-       localStorage.setItem("name", textname.value);
-       localStorage.setItem("mail", textmail.value);
+       localStorage.setItem("name", textName.value);
+       localStorage.setItem("mail", textMail.value);
 		}
   }
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (modallapp.classList.contains("modall-app--active")) {
+    if (modallApp.classList.contains("modall-app--active")) {
       evt.preventDefault();
-      modallapp.classList.remove("modall-app--active");
-      modallapp.classList.remove("modal-error");
+      modallApp.classList.remove("modall-app--active");
+      modallApp.classList.remove("modal-error");
     }
   }
 });
@@ -59,24 +59,24 @@ window.addEventListener("keydown", function (evt) {
 /*Modal mapp*/
 
 var bm = document.querySelector("#bigg-mapp");
-var modallmap = document.querySelector(".modall-map");
+var modallMap = document.querySelector(".modall-map");
 var lb = document.querySelector("#little-big");
 
- bm.addEventListener("click", function (evt) {
-  	evt.preventDefault();
-  	modallmap.classList.add("modall-map--active");
-  	});
-
- lb.addEventListener("click", function (evt) {
-  	evt.preventDefault();
-  	modallmap.classList.remove("modall-map--active");
+bm.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	modallMap.classList.add("modall-map--active");
 });
 
- window.addEventListener("keydown", function (evt) {
+lb.addEventListener("click", function (evt) {
+  	evt.preventDefault();
+  	modallMap.classList.remove("modall-map--active");
+});
+
+window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (modallmap.classList.contains("modall-map--active")) {
+    if (modallMap.classList.contains("modall-map--active")) {
       evt.preventDefault();
-      modallmap.classList.remove("modall-map--active");
+      modallMap.classList.remove("modall-map--active");
     }
   }
 });
