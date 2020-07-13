@@ -2046,7 +2046,8 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   background-color: var(--basic-white);
   width: 299px;
-  padding: 9px;
+  padding-top: 12px;
+  padding-bottom: 9px;
   padding-left: 56px;
   padding-right: 57px;
   margin-left: 51px;
