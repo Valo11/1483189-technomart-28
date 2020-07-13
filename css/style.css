@@ -472,6 +472,7 @@ input[type="radio"].visually-hidden {
 
 .header-top-line {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .header-top-line a {
@@ -553,6 +554,7 @@ input[type="radio"].visually-hidden {
 
 .main-header-nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
 }
 
@@ -683,6 +685,7 @@ input[type="radio"].visually-hidden {
 
 .header-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0px;
   background-color: var(--basic-greilight);
@@ -886,6 +889,7 @@ input[type="radio"].visually-hidden {
 
 .section-title-popular {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   font-family: Cuprum, Arial, sans-serif;
@@ -915,6 +919,7 @@ input[type="radio"].visually-hidden {
 
 .section-title {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   font-family: Cuprum, Arial, sans-serif;
@@ -1719,6 +1724,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-line {
+  flex-wrap: wrap;
   display: flex;
 }
 
@@ -2040,8 +2046,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   background-color: var(--basic-white);
   width: 299px;
-  height: 45px;
-  padding: 12px;
+  padding: 9px;
   padding-left: 56px;
   padding-right: 57px;
   margin-left: 51px;
@@ -2137,6 +2142,7 @@ input[type="radio"].visually-hidden {
 .bread-crumbs {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   padding-top: 16px;
   padding-bottom: 19px;
   list-style: none;
@@ -2226,6 +2232,7 @@ input[type="radio"].visually-hidden {
 
 .filter-background {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 220px;
   padding-top: 10px;
@@ -2332,6 +2339,7 @@ input[type="radio"].visually-hidden {
 .price-controls {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .price-controls label {
@@ -2576,6 +2584,7 @@ input[type="radio"].visually-hidden {
 .sort-line {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 700px;
   background-color: var(--basic-back-groundd);
