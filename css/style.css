@@ -72,6 +72,7 @@
   --basic-greylight-decor: rgba(229, 229, 229, 1);
   --basic-rgba: rgba(0, 0, 0, 0.0001);
   --basic-hov-foc: rgba(0, 0, 0, 0.15);
+  --basic-greylight-hex: #8E939C;
   --basic-greylight-cullian: #B5B5B5;
   --special-yellow: #FFBF47;
   --special-blue: #3BBCE3;
@@ -708,7 +709,7 @@ input[type="radio"].visually-hidden {
 
 .header-navigation a:active {
   background-color: var(--basic-greilight-active);
-  opacity: 0.5;
+  color: var(--basic-greylight-hex);
 }
 
 .promo {
@@ -1103,7 +1104,7 @@ input[type="radio"].visually-hidden {
 .service-block {
   background-color: var(--basic-background);
   padding-top: 67px;
-  padding-bottom: 61px;
+  padding-bottom: 102px;
 }
 
 .service-block .container {
@@ -1164,9 +1165,9 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   color: var(--basic-blackk);
   grid-column: 1/-1;
-  width: 283px;
+  width: 312px;
   margin: 0px;
-  padding-bottom: 69px;
+  padding-bottom: 0px;
 }
 
 .item-active {
@@ -1180,7 +1181,7 @@ input[type="radio"].visually-hidden {
 .service-slider-element--delivery::before {
   content: "";
   position: absolute;
-  bottom: -56px;
+  bottom: -126px;
   right: 0px;
   width: 468px;
   height: 261px;
@@ -1196,13 +1197,17 @@ input[type="radio"].visually-hidden {
 .service-slider-element--garant::before {
   content: "";
   position: absolute;
-  bottom: -43px;
-  right: -13px;
+  bottom: -106px;
+  right: -8px;
   width: 389px;
   height: 283px;
   background-image: url("../img/service/medal.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.service-slider-element--garant h2 {
+  padding-bottom: 24px;
 }
 
 .service-slider-element--credit {
@@ -1212,8 +1217,8 @@ input[type="radio"].visually-hidden {
 .service-slider-element--credit::before {
   content: "";
   position: absolute;
-  bottom: -77px;
-  right: -13px;
+  bottom: -111px;
+  right: -10px;
   width: 465px;
   height: 285px;
   background-image: url("../img/service/credit.png");
@@ -1222,8 +1227,13 @@ input[type="radio"].visually-hidden {
 }
 
 .service-slider-element--credit .button {
-  padding-left: 42px;
-  padding-right: 38px;
+  padding-left: 45px;
+  padding-right: 44px;
+  padding-bottom: 11px;
+  border-radius: 3px;
+  display: block;
+  margin-top: 25px;
+  min-width: 195px;
 }
 
 .service-slider-element--credit a {
@@ -1288,7 +1298,7 @@ input[type="radio"].visually-hidden {
 .company-description {
   display: flex;
   justify-content: space-between;
-  padding-top: 71px;
+  padding-top: 68px;
   padding-bottom: 71px;
 }
 
@@ -1327,8 +1337,7 @@ input[type="radio"].visually-hidden {
 .contacts ul {
   padding-top: 2px;
   padding-left: 38px;
-  margin: 0px;
-  margin-bottom: 13px;
+  margin: 0 0 13px;
 }
 
 .contacts li {
@@ -1773,7 +1782,7 @@ input[type="radio"].visually-hidden {
   color: var(--basic-white);
   width: 137px;
   margin: 0;
-  padding-top: 35px;
+  padding-top: 33px;
   padding-bottom: 35px;
   padding-left: 109px;
   padding-right: 51px;
@@ -1802,7 +1811,7 @@ input[type="radio"].visually-hidden {
   color: var(--basic-white);
   width: 100px;
   margin: 0;
-  padding-top: 35px;
+  padding-top: 33px;
   padding-bottom: 35px;
 }
 
@@ -2089,6 +2098,7 @@ input[type="radio"].visually-hidden {
 
 .personal-account-block {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   width: 210px;
   justify-content: space-between;
