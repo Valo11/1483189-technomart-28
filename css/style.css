@@ -1110,12 +1110,12 @@ input[type="radio"].visually-hidden {
   position: relative;
   background-color: var(--basic-background);
   padding-top: 67px;
-  padding-bottom: 102px;
 }
 
 .service-block .container {
   display: grid;
   grid-template-columns: 240px 1fr;
+  padding-bottom: 102px;
 }
 
 .service-block p {
