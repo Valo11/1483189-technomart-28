@@ -1107,12 +1107,12 @@ input[type="radio"].visually-hidden {
 }
 
 .service-block {
-  position: relative;
   background-color: var(--basic-background);
   padding-top: 67px;
 }
 
 .service-block .container {
+  position: relative;
   display: grid;
   grid-template-columns: 240px 1fr;
   padding-bottom: 102px;
@@ -1186,7 +1186,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   bottom: 7px;
-  right: 221px;
+  right: 11px;
   width: 468px;
   height: 261px;
   background-image: url("../img/service/thecar.png");
@@ -1198,7 +1198,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   bottom: 8px;
-  right: 212px;
+  right: 2px;
   width: 389px;
   height: 283px;
   background-image: url("../img/service/medal.png");
@@ -1214,7 +1214,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   bottom: 5px;
-  right: 210px;
+  right: 0px;
   width: 465px;
   height: 285px;
   background-image: url("../img/service/credit.png");
@@ -1223,6 +1223,8 @@ input[type="radio"].visually-hidden {
 }
 
 .service-slider-element--credit .button {
+  position: relative;
+  z-index: 1;
   padding-left: 45px;
   padding-right: 44px;
   padding-bottom: 11px;
