@@ -1107,6 +1107,7 @@ input[type="radio"].visually-hidden {
 }
 
 .service-block {
+  position: relative;
   background-color: var(--basic-background);
   padding-top: 67px;
   padding-bottom: 102px;
@@ -1179,15 +1180,11 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.service-slider-element--delivery {
-  position: relative;
-}
-
 .service-slider-element--delivery::before {
   content: "";
   position: absolute;
-  bottom: -126px;
-  right: 0px;
+  bottom: 7px;
+  right: 221px;
   width: 468px;
   height: 261px;
   background-image: url("../img/service/thecar.png");
@@ -1195,15 +1192,11 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.service-slider-element--garant {
-  position: relative;
-}
-
 .service-slider-element--garant::before {
   content: "";
   position: absolute;
-  bottom: -106px;
-  right: -8px;
+  bottom: 8px;
+  right: 212px;
   width: 389px;
   height: 283px;
   background-image: url("../img/service/medal.png");
@@ -1215,15 +1208,11 @@ input[type="radio"].visually-hidden {
   padding-bottom: 24px;
 }
 
-.service-slider-element--credit {
-  position: relative;
-}
-
 .service-slider-element--credit::before {
   content: "";
   position: absolute;
-  bottom: -111px;
-  right: -10px;
+  bottom: 5px;
+  right: 210px;
   width: 465px;
   height: 285px;
   background-image: url("../img/service/credit.png");
